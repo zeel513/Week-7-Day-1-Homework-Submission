@@ -22,10 +22,16 @@ header {
 }
 .main-header {
     background-color: rgb(255, 255, 255, 0.8);
-    width: 700px;
+    width: 90%;
+    max-width: 700px;
     margin: 2em auto 0 auto;
     min-height: 100px;
     height: 100px;
+    position: relative;
+}
+.main-header.sticky-top {
+    top: 0;
+    z-index: 1030;
 }
 .main-header .logo {
     width: px;
@@ -36,7 +42,7 @@ header {
 
 /* Navigation */
 .main-menu {
-    margin-left: 222px;
+    margin-left: 0;
     font-weight: 400;
 }
 .main-menu ul li {
@@ -196,6 +202,12 @@ main h1, main h2 {
     margin-bottom: 0.35em;
 }
 
+@media (max-width: 992px) {
+    .cliff-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Lightbox */
 .backdrop {
     position: fixed;
@@ -288,15 +300,20 @@ section #partners {
     text-align: center;
 }
 section #partners .partner {
-    display: inline-block;
-    margin: 0 0.75em;
-    padding: 1.3em 1.5em;
-    background-color: #fff;
-    border-radius: 50%;
+    margin: 0;
+    padding: 0.75em;
+    display: flex;
+    justify-content: center;
 }
 section #partners .partner img {
     width: 90px;
     height: 90px;
+}
+
+section #partners .partner .partner-badge {
+    padding: 1.3em 1.5em;
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 /* Footer */
@@ -518,12 +535,6 @@ legend {
     color: #fff;
 }
 
-section #partners .partner .partner-badge {
-    padding: 1.3em 1.5em;
-    background-color: #fff;
-    border-radius: 50%;
-}
-
 @media (max-width: 768px) {
     footer #nondisclaimer .copy {
         padding: 3.5em 0 3.5em 0;
@@ -581,31 +592,6 @@ section #partners .partner .partner-badge {
 }
 
 /* Home page Bootstrap layout compatibility (formerly in styles.css) */
-#home #container {
-    width: 100%;
-}
-
-#home .main-header {
-    width: 90%;
-    max-width: 700px;
-    position: relative;
-}
-
-#home .main-header .logo img {
-    width: 100px;
-    height: 100px;
-    margin: 0 2em 0 0;
-}
-
-#home .main-menu {
-    margin-left: 0;
-}
-
-#home .main-menu .navbar-nav .nav-item {
-    float: none;
-    display: block;
-}
-
 #home main {
     padding: 3em 6em 3em 5.5em;
     margin: 2em 0;
@@ -635,33 +621,6 @@ section #partners .partner .partner-badge {
 }
 
 @media (max-width: 992px) {
-    #home .main-header {
-        height: auto;
-        min-height: 100px;
-    }
-
-    #home .main-header .logo img {
-        position: relative;
-        bottom: 8px;
-    }
-
-    #home .main-menu {
-        width: 220px;
-        background-color: rgb(255, 255, 255);
-        position: absolute;
-        right: 1.7em;
-        top: 100%;
-        z-index: 1000;
-    }
-
-    #home .main-menu .navbar-nav .nav-item {
-        border-left: none;
-        border-bottom: 1px solid rgba(202, 204, 202, 0.6);
-        line-height: 50px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
     #home main {
         padding: 3em 1em 3em 1em;
         margin: 0;

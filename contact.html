@@ -6,6 +6,15 @@
 <head>
   <title>Great Cliffs of California</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  >
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,20 +24,30 @@
 
     <!-- Header Section: Contains logo and main navigation menu -->
     <header>
-      <div class="main-header">
-        <!-- Logo Area -->
-        <div class="logo">
-          <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
-        </div>
-
-        <!-- Navigation Menu -->
-        <nav class="main-menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cliffs.html">Cliffs</a></li>
-            <li><a href="activities.html">Activities</a></li>
-            <li class="active"><a href="contact.html">Contact</a></li>
-          </ul>
+      <div class="main-header sticky-top">
+        <nav class="navbar navbar-expand-xl navbar-light p-0">
+          <a class="navbar-brand logo mr-0" href="index.html">
+            <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
+          </a>
+          <button
+            class="navbar-toggler mr-3"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse main-menu" id="mainNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="cliffs.html">Cliffs</a></li>
+              <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+              <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -93,7 +112,9 @@
           </div>
 
           <div class="submit-container">
-            <input id="submit" type="submit" value="Inquire">
+            <button id="submit" type="submit" class="btn btn-primary">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i> Inquire
+            </button>
           </div>
         </fieldset>
       </form>
@@ -102,7 +123,7 @@
     <!-- Partners Section: Displays list of partner logos/images -->
     <section>
       <!-- Partner List: Contains logos for all vendor partners -->
-      <ul id="partners">
+      <ul id="partners" class="container list-unstyled row mb-0">
       </ul>
     </section>
 
@@ -130,6 +151,9 @@
     </footer>
 
   </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="js/site_scripts.js"></script>
   <script src="js/randomcodes.js"></script>
 </body>

@@ -10,15 +10,25 @@
 
     var partnersList = document.getElementById("partners");
 
+    if (!partnersList) {
+        return;
+    }
+
+    partnersList.classList.add("container", "list-unstyled", "row", "mb-0");
+
     partners.forEach(function (partner) {
         var li = document.createElement("li");
-        li.className = "partner";
+        li.className = "partner col-12 col-sm-6 col-md-4 col-lg-2";
+
+        var badge = document.createElement("div");
+        badge.className = "partner-badge";
 
         var img = document.createElement("img");
         img.src = partner.src;
         img.alt = partner.alt;
 
-        li.appendChild(img);
+        badge.appendChild(img);
+        li.appendChild(badge);
         partnersList.appendChild(li);
     });
 })();
