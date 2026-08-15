@@ -1,7 +1,37 @@
-# Week 5 Day 1 Homework
+# Week 7 Day 1 Homework
 
-### Before selecting activity
-<img width="1012" height="929" alt="Screenshot 2026-07-29 at 8 13 41 PM" src="https://github.com/user-attachments/assets/941252f3-dcc7-44e7-8f0d-dd2cefaae8f5" />
+## Screenshots
 
-### After selecting activity
-<img width="1007" height="975" alt="Screenshot 2026-07-29 at 8 13 50 PM" src="https://github.com/user-attachments/assets/d13b4fba-7d6a-431b-8467-4349b2d63865" />
+### Home Page
+
+#### Desktop
+![alt text](image.png)
+
+#### Mobile
+![alt text](image-8.png)
+
+### Cliffs Page
+
+#### Desktop
+![alt text](image-1.png)
+
+#### Mobile
+![alt text](image-6.png)
+![alt text](image-7.png)
+
+### Activities Page
+
+#### Desktop
+![alt text](image-2.png)
+
+#### Mobile
+![alt text](image-5.png)
+
+### Contact Page
+
+#### Desktop
+![alt text](image-3.png)
+
+#### Mobile
+![alt text](image-4.png)
+
